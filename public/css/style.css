@@ -1,0 +1,127 @@
+body{
+   display: flex;
+   flex-direction: column;
+   min-height: 100vh;
+}
+.container{
+    flex: 1;
+}
+
+.navbar{
+    height: 4rem;
+    background-color: white;
+}
+.fa-compass{
+    color: #fe424d;
+    font-size: 2rem;
+}
+.nav-link{
+    color: #222222;
+}
+
+/* Footer */
+
+
+.f-div{
+    height: 6rem;
+    background-color: #ebebeb;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+
+}
+
+.f-icon-social i{
+    margin-left: 1rem;
+    font-size: 1.2rem;
+}
+
+.f-copy{
+   color: #222222;
+}
+
+
+.f-a a{
+    text-decoration: none;
+    color: #222222;
+}
+
+.f-a :hover{
+    text-decoration: underline;
+    color: #222222;
+}
+
+/* Cards */
+
+
+.card-listing{
+    border: none !important;
+    margin-bottom: 2rem !important;
+
+}
+.card-img-top{
+    border-radius: 1rem !important;
+    width: 100% !important;
+    object-fit: cover !important;
+}
+
+.card-body{
+    padding: 0;
+    
+}
+
+.card-text p{
+    font-weight: 400;
+}
+
+.listing-link{
+    text-decoration: none;
+    opacity: 100%;
+}
+.card-image{
+    opacity: 1 !important;
+    transition: 0.3s;
+}
+
+.card-image:hover{
+    opacity: 0.7 !important;
+}
+
+/* New Page */
+
+.add-btn{
+    background-color: #fe424d;
+    border: none;
+}
+
+/* Edit Page */
+
+
+.edit-btn{
+    background-color: #fe424d;
+    border: none;
+}
+
+
+/* Show Page */
+
+.btns{
+    display: flex;
+}
+
+.show-img{
+    height: 30vh !important;
+}
+
+/* Review Card */
+
+
+.review-card{
+    margin-left: 1px;
+}
+
+.fa-brands{
+    color: black;
+}

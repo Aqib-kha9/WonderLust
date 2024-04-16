@@ -9,7 +9,7 @@ const methodOverride = require("method-override");
 const ejsMate = require("ejs-mate");
 const ExpressError = require("./utils/ExpressError.js");
 const session = require("express-session");
-const MongoStore = require('connect-mongo');
+const MongoStore = require('connect-mongo').default;
 const flash = require("connect-flash");
 const passport = require("passport");
 const LocalStrategy = require("passport-local");
@@ -34,12 +34,12 @@ app.use(express.static(path.join(__dirname,"/public")));
 // Database Connection
 
 
-
 const store = MongoStore.create({
     mongoUrl: dbUrl,
     crypto: {
         secret: process.env.SECRET,
     },
+    ...options,
     touchAfter: 24 * 3600,
 });
 

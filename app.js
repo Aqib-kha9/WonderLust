@@ -1,17 +1,13 @@
 if(process.env.NODE_ENV != "production"){
     require('dotenv').config();
 };
-
-console.log(process.env);
-
-
 const express = require("express");
 const app = express();
 const mongoose = require("mongoose");
 const path = require("path");
 const methodOverride = require("method-override");
 const ejsMate = require("ejs-mate");
-const ExpressError = require("./utils/ExpressError");
+const ExpressError = require("./utils/ExpressError.js");
 const session = require("express-session");
 const MongoStore = require('connect-mongo');
 const flash = require("connect-flash");
@@ -26,7 +22,6 @@ const reviewRouter = require("./routes/review.js");
 const userRouter = require("./routes/user.js");
 
 const dbUrl = process.env.ATLASDB_URL;
-// const MONGO_URL = "mongodb://127.0.0.1:27017/wonderlust";
 app.set("view engine","ejs");
 app.set("views", path.join(__dirname,"views"));
 app.use(express.urlencoded({extended: true}));
@@ -76,11 +71,6 @@ async function main(){
 
 
 
-// app.get("/",(req,res)=>{
-//     res.send("root is working");
-// });
-
-
 app.use(session(sessionOption));
 app.use(flash());
 
@@ -100,19 +90,6 @@ app.use((req,res,next)=>{
     res.locals.currUser = req.user;
     next();
 });
-
-
-// app.get("/registerUser", async(req,res)=>{
-//     let fakeUser = new User({
-//         email: "aqib@gmail.com",
-//         username: "aqib"
-//     });
-//     let newUser = await User.register(fakeUser, "aquibkhan");
-//     res.send(newUser);
-// })
-
-
-
 
 
 // Routes Calling

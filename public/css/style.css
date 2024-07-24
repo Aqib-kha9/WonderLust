@@ -22,7 +22,7 @@ body{
 /* Footer */
 
 
-.f-div{
+/* .f-div{
     height: 6rem;
     background-color: #ebebeb;
     display: flex;
@@ -51,7 +51,7 @@ body{
 .f-a :hover{
     text-decoration: underline;
     color: #222222;
-}
+} */
 
 /* Cards */
 
@@ -125,3 +125,5 @@ body{
 .fa-brands{
     color: black;
 }
+
+

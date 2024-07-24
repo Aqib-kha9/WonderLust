@@ -1,0 +1,45 @@
+.tax-toggle{
+    border: 1px solid black;
+    border-radius: 1rem;
+    height: 3rem;
+    padding: 1rem;
+    margin-left: 7rem;
+    display: flex;
+    align-items: center;
+}
+
+@media (max-width: 700px){
+    .filter div i{
+        display: none;
+    }
+    .filter p{
+        display: none;
+    }
+    .form-switch{
+        display: none;
+    }
+    .tax-toggle {
+        border: none;
+        border-radius: none;
+        height: 0rem;
+        padding: none;
+        margin-left: none;
+    }
+    .listing-link{
+        position: relative;
+        top: -4rem;
+    }
+    
+}
+
+/* navbar */
+
+.container-fluid{
+
+}
+
+@media (max-width:700){
+    #navbarNavAltMarkup{
+        background-color: black;
+    }
+}

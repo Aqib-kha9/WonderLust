@@ -1,0 +1,75 @@
+/* Footer */
+
+
+.f-div{
+    height: 3rem;
+    background-color: #ebebeb;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.f-icon-social i{
+    margin-left: 1rem;
+    font-size: 1.2rem;
+}
+
+.f-a{
+    display: flex;
+    flex-direction: row;
+    margin-left: 2.5rem;
+    font-size: .9rem;
+}
+
+.f-copy{
+   color: #222222;
+}
+
+
+.f-a a{
+    text-decoration: none;
+    color: #222222;
+    margin-left: 2rem;
+}
+
+
+.f-a :hover{
+    text-decoration: underline;
+    color: #222222;
+}
+
+.f-icon-social{
+    margin-right: 4rem;
+}
+.f-copy{
+    margin-left: 4rem;
+}
+
+@media(max-width: 770px){
+    .f-div{
+        height: 6rem;
+        background-color: #ebebeb;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    .f-copy{
+        margin-left: .8rem;
+    }
+    .f-a{
+        display: flex;
+        flex-direction: row;
+        margin-left: 0rem;
+        font-size: .9rem;
+    }
+    .f-a a{
+        text-decoration: none;
+        color: #222222;
+        margin-left: 1rem;
+    }
+    
+}

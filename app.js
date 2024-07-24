@@ -93,9 +93,25 @@ app.use((req,res,next)=>{
 
 // Routes Calling
 
+
 app.use("/listings", listingRouter);
 app.use("/listings/:id/reviews", reviewRouter);
 app.use("/",userRouter);
+
+// footer Routes
+
+app.get("/privacy",(req,res)=>{
+    res.render("footer/privacy");
+})
+app.get("/term",(req,res)=>{
+    res.render("footer/term");
+})
+app.get("/sitemap",(req,res)=>{
+    res.render("footer/sitemap");
+})
+app.get("/details",(req,res)=>{
+    res.render("footer/details");
+})
 
 
 // Error Handling

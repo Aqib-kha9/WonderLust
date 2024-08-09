@@ -109,9 +109,9 @@ app.get("/term",(req,res)=>{
 app.get("/sitemap",(req,res)=>{
     res.render("footer/sitemap");
 })
-app.get("/details",(req,res)=>{
-    res.render("footer/details");
-})
+// app.get("/details",(req,res)=>{
+//     res.render("footer/details");
+// })
 
 
 // Error Handling

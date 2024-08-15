@@ -106,9 +106,9 @@ app.get("/privacy",(req,res)=>{
 app.get("/term",(req,res)=>{
     res.render("footer/term");
 })
-app.get("/sitemap",(req,res)=>{
-    res.render("footer/sitemap");
-})
+// app.get("/sitemap",(req,res)=>{
+//     res.render("footer/sitemap");
+// })
 app.get("/contact",(req,res)=>{
     res.render("footer/contact");
 })
